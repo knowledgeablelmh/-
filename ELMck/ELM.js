@@ -4,7 +4,7 @@
  * and handle the response.
  */
 ck =$request.headers.Cookie
-var CookieValue = ck.match(/wskey=.+?;/)
+var CookieValue = ck.match(/isg=.+?;/)
 
 data=JSON.parse($response.body)
     data = data.userInfoSns.unickName

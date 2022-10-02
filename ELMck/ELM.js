@@ -4,13 +4,15 @@
  * and handle the response.
  */
 
-ck = $request.headers.Cookie
-var CookieValue = ck
+ck =$request.headers.Cookie
+var CookieValue = ck.match(/isg=.+?;/)
 
-data = JSON.parse($response.body)
-data = data.userInfoSns.unickName
-url = '%E6%81%AD%E5%96%9C%E6%82%A8'
+data=JSON.parse($response.body)
+    data = data.userInfoSns.unickName
+    url = '%E6%81%AD%E5%96%9C%E6%82%A8'
+
+
 
 console.log(ck)
-$.notify(decodeURI(url), "饿了么ck获取成功");
-$.done();
+$notify(decodeURI(url), "京东wskey获取成功", "csg="+data+";"+CookieValue);
+    $done();

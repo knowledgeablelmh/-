@@ -3,9 +3,8 @@
  * @fileoverview Example to compose HTTP request
  * and handle the response.
  */
-
 ck =$request.headers.Cookie
-var CookieValue = ck.match(/isg=.+?;/)
+var CookieValue = ck.match(/wskey=.+?;/)
 
 data=JSON.parse($response.body)
     data = data.userInfoSns.unickName

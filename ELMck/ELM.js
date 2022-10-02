@@ -14,5 +14,5 @@ data=JSON.parse($response.body)
 
 
 console.log(ck)
-$notify(decodeURI(url), "京东wskey获取成功" , CookieValue);
+$notify(decodeURI(url), "京东wskey获取成功", CookieValue);
     $done();

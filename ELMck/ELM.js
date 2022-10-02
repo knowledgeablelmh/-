@@ -13,5 +13,5 @@ data = data.userInfoSns.unickName
 url = '%E6%81%AD%E5%96%9C%E6%82%A8'
 
 console.log(ck)
-$.notify(decodeURI(url), "饿了么ck获取成功", CookieValue);
+$.notify(decodeURI(url), "饿了么ck获取成功");
 $.done();

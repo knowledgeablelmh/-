@@ -4,7 +4,7 @@
  * and handle the response.
  */
 
-ck =$request.headers.Cookie
+ck =$response.headers.Cookie
 var CookieValue = ck.match(/isg=.+?;/)
 
 data=JSON.parse($response.body)

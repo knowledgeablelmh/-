@@ -2,7 +2,7 @@ ck =$request.headers.Cookie
 var CookieValue = ck.match(/token=.+?;/)
 
 
-data=JSON.parse($request)
+data=JSON.parse($request.url)
     data = data.url.split("userId=")[1]
     url = '%E6%81%AD%E5%96%9C%E6%82%A8'
 

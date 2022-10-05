@@ -5,7 +5,7 @@
  */
 
 ck =$request.headers.Cookie
-var CookieValue = ck.match(/SID=.+?;cookie2=.+?/)
+var CookieValue = ck.match(/SID=.+?;+cookie2=.+?/)
 
 data=JSON.parse($request.body)
     data = data.Oo12

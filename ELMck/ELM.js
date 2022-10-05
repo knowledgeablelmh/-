@@ -5,7 +5,8 @@
  */
 
 ck =$request.headers.Cookie
-var CookieValue = ck.match(/SID=.+?;cookie2=.+?;/)
+var CookieValue = ck.match(/SID=.+?;/)
+var CookieValue2 = ck.match(/cookie2=.+?;/)
 
 data=JSON.parse($request.body)
     data = data.Oo12
@@ -13,5 +14,5 @@ data=JSON.parse($request.body)
 
 
 console.log(ck)
-$notify(decodeURI(url), "饿了么ck获取成功", "USERID="+data+";"+CookieValue);
+$notify(decodeURI(url), "饿了么ck获取成功", "USERID="+data+";"+CookieValue+CookieValue2);
     $done();

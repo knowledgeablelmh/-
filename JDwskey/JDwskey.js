@@ -2,7 +2,6 @@
 /**
  * @fileoverview Example to compose HTTP request
  * and handle the response.
- * https://raw.githubusercontent.com/a358594784/yuwen.github.io/main/ywwskey.js
  */
 
 ck =$request.headers.Cookie

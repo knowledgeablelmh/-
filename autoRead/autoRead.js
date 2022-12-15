@@ -1,12 +1,4 @@
 
-/*
-
-http://u.cocozx.cn/api/coin/read url script-response-body autoRead.js
-^http://.+/mock/read url script-analyze-echo-response autoRead.js
-
-*/
-
-
 const $ = new Env(`阅读自动返回`);
 !(async () => {
   if (typeof $request !== "undefined") {
